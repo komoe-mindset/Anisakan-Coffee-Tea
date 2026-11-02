@@ -1,0 +1,6 @@
+{
+  "name": "Anisakan - Highland Sanctuary",
+  "description": "Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking & B2B enquiry system near Pyin Oo Lwin, Myanmar.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
