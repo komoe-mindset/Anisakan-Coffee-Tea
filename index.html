@@ -4,19 +4,170 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1b3b2b" />
-  <meta name="description" content="Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking & B2B enquiry system near Pyin Oo Lwin, Myanmar." />
-  <meta property="og:title" content="Anisakan | A Highland Sanctuary" />
-  <meta property="og:description" content="Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking & B2B enquiry system near Pyin Oo Lwin, Myanmar." />
-  <title>Anisakan | A Highland Sanctuary</title>
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking &amp; B2B enquiry system near Pyin Oo Lwin, Myanmar." />
+  
+  <title>Anisakan - Highland Sanctuary</title>
+  <link rel="canonical" href="https://anisakan-resort.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anisakan-resort.com/" />
+  <meta property="og:site_name" content="Anisakan Coffee &amp; Tea Garden Resort" />
+  <meta property="og:title" content="Anisakan - Highland Sanctuary" />
+  <meta property="og:description" content="Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking &amp; B2B enquiry system near Pyin Oo Lwin, Myanmar." />
+  <meta property="og:image" content="/assets/hero.webp" />
+  <meta property="og:image:width" content="2048" />
+  <meta property="og:image:height" content="768" />
+  <meta property="og:image:alt" content="Misty highlands and coffee plantation in Pyin Oo Lwin, Myanmar | ပြင်ဦးလွင် ကော်ဖီနှင့် လက်ဖက်ခြံ ရှုခင်း" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="my_MM" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://anisakan-resort.com/" />
+  <meta name="twitter:title" content="Anisakan - Highland Sanctuary" />
+  <meta name="twitter:description" content="Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, and trip planner near Pyin Oo Lwin, Myanmar." />
+  <meta name="twitter:image" content="/assets/hero.webp" />
+  <meta name="twitter:image:alt" content="Misty highlands and coffee plantation in Pyin Oo Lwin, Myanmar | ပြင်ဦးလွင် ကော်ဖီနှင့် လက်ဖက်ခြံ ရှုခင်း" />
+
+  <!-- Schema.org JSON-LD Structured Data for Lighthouse SEO standards -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Resort",
+    "name": "Anisakan Coffee & Tea Garden Resort",
+    "description": "Highland sanctuary resort showcase, interactive 360° estate explorer, washed-process coffee guide, companion crop garden, trip itinerary planner, and multilingual booking & B2B enquiry system near Pyin Oo Lwin, Myanmar.",
+    "url": "https://anisakan-resort.com/",
+    "image": "/assets/hero.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pyin Oo Lwin",
+      "addressRegion": "Mandalay",
+      "addressCountry": "MM"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "21.98",
+      "longitude": "96.43"
+    },
+    "telephone": "+95-9-402636531",
+    "email": "umyohtut1971@gmail.com"
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <!-- Preload primary English and Myanmar WOFF2 fonts to maximize PageSpeed score and eliminate FOIT/CLS -->
   <link rel="preload" href="/assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/cormorant-regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/noto-myanmar.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- Preload high-priority above-the-fold Hero banner image for optimal Largest Contentful Paint (LCP) -->
+  <link rel="preload" as="image" href="/assets/hero.webp" type="image/webp" fetchpriority="high" />
 </head>
 <body class="antialiased">
-  <div id="root"></div>
+  <div id="root">
+    <!-- Semantic initial markup for search engines and performance audits prior to React hydration -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Anisakan home">
+          <span class="brand-words">
+            <strong>ANISAKAN</strong>
+            <small>COFFEE &amp; TEA GARDEN RESORT</small>
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Above-the-fold Hero Banner: Single <h1> heading, fetchpriority="high", eager loaded, explicit width & height -->
+      <section class="hero" id="home">
+        <img
+          src="/assets/hero.webp"
+          alt="Panoramic mist over green highland coffee and tea fields in Pyin Oo Lwin | ပြင်ဦးလွင် ကော်ဖီနှင့် လက်ဖက်ခင်း တောင်ပေါ်ရှုခင်း မြူခိုးဝေဆာ ရှုခင်း"
+          width="2048"
+          height="768"
+          fetchpriority="high"
+          decoding="async"
+          class="hero-image"
+          style="width: 100%; height: 100%; object-fit: cover;"
+        />
+        <div class="hero-content">
+          <h1 id="hero-title">
+            A Highland Sanctuary<br />
+            of Coffee, Tea &amp; <em>Pure Air</em>
+          </h1>
+        </div>
+      </section>
+
+      <!-- Below-the-fold Estate Explorer: Logical <h2> and <h3>, loading="lazy", decoding="async", explicit width & height -->
+      <section class="estate" id="estate">
+        <h2>The Estate Explorer</h2>
+        <article class="zone-detail">
+          <div class="zone-photo-wrap">
+            <img
+              id="zone-image"
+              src="/assets/farm.webp"
+              alt="Arabica coffee cherries growing on a highland farm | ပြင်ဦးလွင် တောင်ပေါ်ခြံရှိ အာရေဗျကာကော်ဖီသီးပင်များ"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Where it all begins</h3>
+        </article>
+      </section>
+
+      <!-- Below-the-fold Washed Process: Logical <h2>, loading="lazy", decoding="async", explicit width & height -->
+      <section class="process" id="process">
+        <h2>Good things take their own sweet time</h2>
+        <div class="process-image">
+          <img
+            src="/assets/factory.webp"
+            alt="Boutique washed-process coffee facility with sun-drying raised beds | ပြင်ဦးလွင် ကော်ဖီထုတ်လုပ်မှု အလုပ်ရုံနှင့် နေရောင်ပြစင်များ"
+            width="1536"
+            height="1024"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <noscript>
+    <div style="padding: 20px; text-align: center;">
+      <p>Anisakan Coffee &amp; Tea Garden Resort near Pyin Oo Lwin, Myanmar.</p>
+      <img
+        src="/assets/hero.webp"
+        alt="Highland sanctuary in Pyin Oo Lwin | ပြင်ဦးလွင် ကော်ဖီနှင့် လက်ဖက်ခြံ ရှုခင်း"
+        width="2048"
+        height="768"
+        fetchpriority="high"
+      />
+      <img
+        src="/assets/farm.webp"
+        alt="Arabica coffee cherries on highland farm | ပြင်ဦးလွင် တောင်ပေါ်ခြံရှိ အာရေဗျကာကော်ဖီသီးပင်များ"
+        width="1536"
+        height="1024"
+        loading="lazy"
+        decoding="async"
+      />
+      <img
+        src="/assets/factory.webp"
+        alt="Artisan coffee processing facility | ပြင်ဦးလွင် ကော်ဖီထုတ်လုပ်မှု အလုပ်ရုံနှင့် နေရောင်ပြစင်များ"
+        width="1536"
+        height="1024"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  </noscript>
+
   <script type="module" src="/src/main.tsx"></script>
 </body>
 </html>

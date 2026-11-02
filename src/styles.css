@@ -281,6 +281,10 @@ h2 {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.86);
   transition: color 0.2s;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 4px;
 }
 
 .desktop-nav a:hover {
@@ -290,6 +294,10 @@ h2 {
 .header-cta {
   border: 1px solid rgba(255, 255, 255, 0.65);
   padding: 12px 19px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -311,7 +319,12 @@ h2 {
   background: none;
   border: 0;
   color: inherit;
-  padding: 10px;
+  padding: 12px;
+  min-width: 48px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
 }
 
 .menu-toggle span {
@@ -329,8 +342,10 @@ h2 {
 }
 
 .mobile-nav a {
-  display: block;
-  padding: 11px 0;
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  min-height: 48px;
   border-bottom: 1px solid #ffffff20;
   font-size: 13px;
   color: #fff;
@@ -657,6 +672,8 @@ h2 {
   position: absolute;
   width: 49px;
   height: 49px;
+  min-width: 48px;
+  min-height: 48px;
   border: 1px solid #fff;
   border-radius: 50%;
   background: #e9eddf;
@@ -667,6 +684,7 @@ h2 {
   transition: transform 0.25s, background 0.25s, color 0.25s;
   display: grid;
   place-items: center;
+  touch-action: manipulation;
 }
 
 .map-pin:hover, .map-pin.active {
@@ -717,9 +735,14 @@ h2 {
   background: #f8f8f2;
   color: #687568;
   padding: 15px 8px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 11px;
   font-weight: 700;
   transition: 0.2s;
+  touch-action: manipulation;
 }
 
 .zone-tabs button span {
@@ -962,14 +985,19 @@ h2 {
 
 .step-buttons button {
   justify-self: start;
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border: 1px solid #79907c;
   border-radius: 50%;
   background: transparent;
   color: #c9d4c5;
-  font-size: 10px;
+  font-size: 11px;
   transition: 0.25s;
+  display: grid;
+  place-items: center;
+  touch-action: manipulation;
 }
 
 .step-buttons button:hover, .step-buttons button.active {
@@ -1045,8 +1073,10 @@ h2 {
 }
 
 .process-controls button {
-  width: 39px;
-  height: 39px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   background: transparent;
   border: 1px solid #78917d;
   color: #fff;
@@ -1054,6 +1084,7 @@ h2 {
   display: grid;
   place-items: center;
   transition: background 0.2s, color 0.2s;
+  touch-action: manipulation;
 }
 
 .process-controls button:hover {
@@ -1356,14 +1387,18 @@ h2 {
 }
 
 .guest-counter button {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border: 0;
   background: transparent;
   color: #46604b;
   font-size: 19px;
   display: grid;
   place-items: center;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .guest-counter button:disabled {
@@ -1372,9 +1407,12 @@ h2 {
 }
 
 .guest-counter output {
-  min-width: 30px;
+  min-width: 48px;
+  min-height: 48px;
+  display: grid;
+  place-items: center;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -1604,9 +1642,15 @@ h2 {
   background: transparent;
   color: #6b7b6c;
   padding: 12px 9px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 10px;
   line-height: 1.4;
   font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .contact-toggle button.active {
@@ -1644,6 +1688,10 @@ h2 {
   min-width: 0;
   width: 100%;
   border-radius: 0;
+}
+
+.contact-form-card input {
+  min-height: 48px;
 }
 
 .contact-form-card textarea {
@@ -1714,6 +1762,10 @@ h2 {
   font-size: 9px;
   letter-spacing: 0.12em;
   font-weight: 700;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
 }
 
 .footer-bottom {
@@ -1731,10 +1783,11 @@ h2 {
 .language-switch {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.48);
-  padding: 8px 9px;
+  padding: 6px 12px;
+  min-height: 48px;
   color: #fff;
   font-size: 12px;
   line-height: 1;
@@ -1748,10 +1801,11 @@ h2 {
   color: #fff;
   cursor: pointer;
   min-width: 54px;
+  min-height: 44px;
   font-size: 10px;
   font-weight: 700;
   line-height: 1.5;
-  padding: 0 2px;
+  padding: 0 4px;
 }
 
 .language-switch option {
@@ -1959,9 +2013,9 @@ h2 {
   .map-card { padding: 12px; }
   .map-canvas { height: 290px; }
   .map-label { font-size: 7px; }
-  .map-pin { width: 43px; height: 43px; }
+  .map-pin { width: 48px; height: 48px; min-width: 48px; min-height: 48px; }
   .map-bottom { font-size: 7px; gap: 10px; }
-  .zone-tabs button { padding: 13px 4px; font-size: 10px; }
+  .zone-tabs button { padding: 13px 4px; font-size: 10px; min-height: 48px; }
   .zone-detail { display: flex; }
   .zone-photo-wrap { height: 230px; min-height: 0; }
   .zone-copy { padding: 25px 22px; }
@@ -1972,7 +2026,7 @@ h2 {
   .process-image { min-height: 230px; height: 230px; }
   .process-content { padding: 27px 23px; }
   .step-buttons { margin-top: 25px; }
-  .step-buttons button { width: 34px; height: 34px; }
+  .step-buttons button { width: 44px; height: 44px; min-width: 44px; min-height: 44px; }
   .step-line { margin-bottom: 27px; }
   .process-stage h3 { font-size: 47px; }
   .process-controls { margin-top: 24px; }

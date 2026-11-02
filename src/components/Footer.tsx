@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
     <footer className="footer">
       <div className="shell">
         <div className="footer-top">
-          <a className="brand footer-brand" href="#home">
+          <a className="brand footer-brand" href="#home" aria-label={t('Anisakan home')}>
             <span className="brand-mark">
               <LeafIcon />
             </span>
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             {t('A quieter kind of beautiful.')}<br />
             <em>{t('In the heart of the highlands.')}</em>
           </p>
-          <a href="#home" className="back-top">
+          <a href="#home" className="back-top" aria-label={t('Back to the top')}>
             {t('BACK TO THE TOP ↑')}
           </a>
         </div>

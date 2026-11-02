@@ -140,7 +140,11 @@ export const InteractiveEstate: React.FC = () => {
                 id="zone-image"
                 src={imageError[zone.key] ? zone.fallbackImage : zone.image}
                 onError={() => setImageError(prev => ({ ...prev, [zone.key]: true }))}
-                alt={t(zone.alt)}
+                alt={zone.alt}
+                width={1536}
+                height={1024}
+                loading="lazy"
+                decoding="async"
               />
               <span className="zone-photo-label" id="zone-photo-label">{t(zone.label)}</span>
               <span className="photo-note">{t('CONCEPT IMAGERY')}</span>

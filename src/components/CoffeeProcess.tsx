@@ -46,7 +46,11 @@ export const CoffeeProcess: React.FC = () => {
                   : '/assets/factory.webp'
               }
               onError={() => setFactoryImgError(true)}
-              alt={t('Concept image of coffee drying beds in a boutique facility')}
+              alt="Boutique washed-process coffee facility with sun-drying raised beds | ပြင်ဦးလွင် ကော်ဖီထုတ်လုပ်မှု အလုပ်ရုံနှင့် နေရောင်ပြစင်များ"
+              width={1536}
+              height={1024}
+              loading="lazy"
+              decoding="async"
             />
             <span>
               {t('CRAFTED WITH CARE')} <span>✦</span>

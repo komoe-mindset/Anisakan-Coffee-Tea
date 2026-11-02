@@ -7,10 +7,15 @@ export const Hero: React.FC = () => {
 
   return (
     <section className="hero relative isolate overflow-hidden" id="home" aria-labelledby="hero-title">
-      <div
+      <img
+        src="/assets/hero.webp"
+        alt="Panoramic mist over green highland coffee and tea fields in Pyin Oo Lwin | ပြင်ဦးလွင် ကော်ဖီနှင့် လက်ဖက်ခင်း တောင်ပေါ်ရှုခင်း မြူခိုးဝေဆာ ရှုခင်း"
+        width={2048}
+        height={768}
+        fetchPriority="high"
+        decoding="async"
         className="hero-image"
-        role="img"
-        aria-label={t('Concept image of mist over green highland coffee and tea fields')}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       />
       <div className="hero-shade" />
       <div className="hero-content shell">

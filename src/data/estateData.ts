@@ -9,7 +9,7 @@ export const estateZones: Record<'farm' | 'factory' | 'relax', EstateZone> = {
     title: 'Where it all begins.',
     image: '/assets/farm.webp',
     fallbackImage: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Concept image of Arabica coffee cherries growing on a highland farm',
+    alt: 'Arabica coffee cherries growing on a highland farm | ပြင်ဦးလွင် တောင်ပေါ်ခြံရှိ အာရေဗျကာကော်ဖီသီးပင်များ',
     description: 'Explore 4.4 acres with approximately 3,000 Arabica trees, intercropped with tea, macadamia, papaya, dragon fruit and passion fruit.',
     highlights: ['4.4 ACRES OF COFFEE', '3,000 ARABICA TREES'],
     activities: ['Walk among the coffee trees', 'Discover companion crops', 'See the harvest up close']
@@ -22,7 +22,7 @@ export const estateZones: Record<'farm' | 'factory' | 'relax', EstateZone> = {
     title: 'A thoughtful transformation.',
     image: '/assets/factory.webp',
     fallbackImage: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Concept image of raised drying beds in a boutique coffee facility',
+    alt: 'Boutique washed-process coffee facility with raised drying beds | ပြင်ဦးလွင် ကော်ဖီထုတ်လုပ်မှု အလုပ်ရုံနှင့် နေရောင်ပြစင်များ',
     description: 'Discover the proposed boutique washed-process facility, from flotation sorting and fermentation tanks to raised solar drying beds.',
     highlights: ['WASHED-PROCESS COFFEE', 'RAISED DRYING BEDS'],
     activities: ['Follow the washed process', 'Explore the drying beds', 'Discover coffee craftsmanship']
@@ -35,7 +35,7 @@ export const estateZones: Record<'farm' | 'factory' | 'relax', EstateZone> = {
     title: 'A little room to breathe.',
     image: '/assets/retreat.webp',
     fallbackImage: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Concept image of a timber veranda overlooking misty highland hills',
+    alt: 'Timber veranda overlooking misty highland hills | ပြင်ဦးလွင် တောင်တန်းရှုခင်းကို မျှော်ကြည့်နိုင်သော သစ်သားဝရန်တာ အနားယူရာနေရာ',
     description: 'Imagine mountain views, fresh brews and unhurried moments around a solar-powered pond setting in the highland air.',
     highlights: ['MOUNTAIN VERANDA', 'PANORAMIC VIEWPOINTS'],
     activities: ['Pause with a fresh brew', 'Take in the mountain views', 'Unwind by the ponds']

@@ -36,6 +36,7 @@ export const Orchard: React.FC = () => {
                 key={crop.id}
                 className={`crop-card ${crop.bgClass} ${isOpen ? 'is-open' : ''}`}
                 type="button"
+                aria-label={`${t(crop.name)}: ${t(crop.desc)}`}
                 aria-expanded={isOpen}
                 onClick={() => toggleCard(crop.id)}
               >

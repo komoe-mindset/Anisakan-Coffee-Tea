@@ -45,7 +45,11 @@ export const ProjectProposal: React.FC = () => {
                   : '/assets/proposal-cover.webp'
               }
               onError={() => setCoverError(true)}
-              alt={t('Cover of the original Anisakan project presentation')}
+              alt="Cover of the original Anisakan project presentation | အနီးစခန်း ကော်ဖီနှင့် လက်ဖက်ခြံ အပန်းဖြေစခန်း စီမံကိန်း စာအုပ်မျက်နှာဖုံး"
+              width={1200}
+              height={675}
+              loading="lazy"
+              decoding="async"
               style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }}
             />
           </div>
